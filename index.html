@@ -102,9 +102,9 @@
                             </div>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-gray-500">
-                                <li><a>Home</a></li>
+                                <li><a id="home2">Home</a></li>
                                 <li>
-                                    <a>Services</a>
+                                    <a id="services2">Services</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Consulting</a></li>
                                         <li><a href="#">Litigation</a></li>
@@ -112,7 +112,7 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a>Cases</a>
+                                    <a id="cases2">Cases</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Criminal Cases</a></li>
                                         <li><a href="#">Civil Cases</a></li>
@@ -120,7 +120,7 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a>Blog</a>
+                                    <a id="blog2">Blog</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Latest Posts</a></li>
                                         <li><a href="#">Popular Posts</a></li>
@@ -128,7 +128,7 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a>Contact Us</a>
+                                    <a id="inbox2">Inbox</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Email Us</a></li>
                                         <li><a href="#">Office Location</a></li>
@@ -144,9 +144,9 @@
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 text-gray-500">
-                            <li><a>Home</a></li>
+                            <li><a class="btn btn-ghost underline underline-offset-8" id="home">Home</a></li>
                             <li>
-                                <a>Services</a>
+                                <a class="btn btn-ghost underline-offset-8" id="services">Services</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Consulting</a></li>
                                         <li><a href="#">Litigation</a></li>
@@ -154,7 +154,7 @@
                                     </ul> -->
                             </li>
                             <li>
-                                <a>Cases</a>
+                                <a class="btn btn-ghost underline-offset-8" id="cases">Cases</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Criminal Cases</a></li>
                                         <li><a href="#">Civil Cases</a></li>
@@ -162,7 +162,7 @@
                                     </ul> -->
                             </li>
                             <li>
-                                <a>Blog</a>
+                                <a class="btn btn-ghost underline-offset-8" id="blog">Blog</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Latest Posts</a></li>
                                         <li><a href="#">Popular Posts</a></li>
@@ -170,7 +170,7 @@
                                     </ul> -->
                             </li>
                             <li>
-                                <a>Contact Us</a>
+                                <a class="btn btn-ghost underline-offset-8" id="inbox">Inbox</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Email Us</a></li>
                                         <li><a href="#">Office Location</a></li>
@@ -185,6 +185,8 @@
                                 href="./index.html">LogOut</a></button>
                     </div>
                 </div>
+            </header>
+            <main id="home-container" class="">
                 <!-- banner -->
                 <div class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14">
                     <div class="hero min-h-screen"
@@ -211,8 +213,6 @@
                         </div>
                     </div>
                 </div>
-            </header>
-            <main>
                 <!-- legal practice area -->
                 <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14">
                     <!-- text -->
@@ -658,6 +658,16 @@
                     </div>
                 </section>
             </main>
+            <div>
+                <!-- services -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="services-container"></section>
+                <!-- cases -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="cases-container"></section>
+                <!-- blog -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="blog-container"></section>
+                <!-- inbox -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="inbox-container"></section>
+            </div>
             <footer class="footer footer-center bg-neutral text-neutral-content p-10">
                 <aside>
                     <div class="flex gap-3 justify-center items-center mb-5">
@@ -717,17 +727,9 @@
                             </div>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-gray-500">
-                                <li><a>Home</a></li>
+                                <li><a id="faqs-4">FAQs</a></li>
                                 <li>
-                                    <a>Services</a>
-                                    <!-- <ul class="p-2">
-                                        <li><a href="#">Consulting</a></li>
-                                        <li><a href="#">Litigation</a></li>
-                                        <li><a href="#">Legal Advice</a></li>
-                                    </ul> -->
-                                </li>
-                                <li>
-                                    <a>Cases</a>
+                                    <a id="cases-4">Cases</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Criminal Cases</a></li>
                                         <li><a href="#">Civil Cases</a></li>
@@ -735,7 +737,7 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a>Blog</a>
+                                    <a id="blog-4">Blog</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Latest Posts</a></li>
                                         <li><a href="#">Popular Posts</a></li>
@@ -743,7 +745,7 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a>Contact Us</a>
+                                    <a id="inbox-4">Inbox</a>
                                     <!-- <ul class="p-2">
                                         <li><a href="#">Email Us</a></li>
                                         <li><a href="#">Office Location</a></li>
@@ -759,17 +761,9 @@
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 text-gray-500">
-                            <li><a>Home</a></li>
+                            <li><a id="faqs-3" class="btn btn-ghost underline underline-offset-8">FAQs</a></li>
                             <li>
-                                <a>Services</a>
-                                <!-- <ul class="p-2">
-                                        <li><a href="#">Consulting</a></li>
-                                        <li><a href="#">Litigation</a></li>
-                                        <li><a href="#">Legal Advice</a></li>
-                                    </ul> -->
-                            </li>
-                            <li>
-                                <a>Cases</a>
+                                <a id="cases-3" class="btn btn-ghost underline-offset-8">Cases</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Criminal Cases</a></li>
                                         <li><a href="#">Civil Cases</a></li>
@@ -777,7 +771,7 @@
                                     </ul> -->
                             </li>
                             <li>
-                                <a>Blog</a>
+                                <a id="blog-3" class="btn btn-ghost underline-offset-8">Blog</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Latest Posts</a></li>
                                         <li><a href="#">Popular Posts</a></li>
@@ -785,7 +779,7 @@
                                     </ul> -->
                             </li>
                             <li>
-                                <a>Contact Us</a>
+                                <a id="inbox-3" class="btn btn-ghost underline-offset-8">Inbox</a>
                                 <!-- <ul class="p-2">
                                         <li><a href="#">Email Us</a></li>
                                         <li><a href="#">Office Location</a></li>
@@ -801,6 +795,18 @@
                     </div>
                 </div>
             </header>
+
+            <div>
+                <!-- FAQs -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14" id="faqs-container-1"></section>
+                <!-- cases -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="cases-container-1"></section>
+                <!-- blog -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="blog-container-1"></section>
+                <!-- inbox -->
+                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="inbox-container-1"></section>
+            </div>
+
         </div>
     </div>
     <script src="js/login.js"></script>

@@ -49,3 +49,105 @@ document.getElementById('admin-logout')
         event.preventDefault();
         showSectionById('index');
     })
+
+document.getElementById('home')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('home-container');
+        changeColorByIdTwo('home');
+    });
+document.getElementById('services')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('services-container');
+        changeColorByIdTwo('services');
+    });
+document.getElementById('cases')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('cases-container');
+        changeColorByIdTwo('cases');
+    });
+document.getElementById('blog')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('blog-container');
+        changeColorByIdTwo('blog');
+    });
+document.getElementById('inbox')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('inbox-container');
+        changeColorByIdTwo('inbox');
+    });
+document.getElementById('home2')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('home-container');
+    });
+document.getElementById('services2')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('services-container');
+    });
+document.getElementById('cases2')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('cases-container');
+    });
+document.getElementById('blog2')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('blog-container');
+    });
+document.getElementById('inbox2')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('inbox-container');
+    });
+
+    document.getElementById('faqs-3')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdFour('faqs-container-1');
+        changeColorByIdThree('faqs-3');
+    });
+document.getElementById('cases-3')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdFour('cases-container-1');
+        changeColorByIdThree('cases-3');
+    });
+document.getElementById('blog-3')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdFour('blog-container-1');
+        changeColorByIdThree('blog-3');
+    });
+document.getElementById('inbox-3')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdFour('inbox-container-1');
+        changeColorByIdThree('inbox-3');
+    });
+
+    document.getElementById('faqs-4')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('faqs-container-1');
+    });
+document.getElementById('cases-4')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('cases-container-1');
+    });
+document.getElementById('blog-4')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('blog-container-1');
+    });
+document.getElementById('inbox-4')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionByIdThree('inbox-container-1');
+    });
