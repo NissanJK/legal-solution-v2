@@ -29,11 +29,13 @@ document.getElementById('admin-Login-btn')
 
 document.getElementById('user-login-panel')
     .addEventListener('click', function () {
+        event.preventDefault();
         showSectionById('user-login');
         changeColorById('user-login-panel');
     });
 document.getElementById('admin-login-panel')
     .addEventListener('click', function () {
+        event.preventDefault();
         showSectionById('admin-login');
         changeColorById('admin-login-panel');
     });
