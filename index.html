@@ -45,12 +45,16 @@
             <!-- login section -->
             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="flex gap-3 justify-center items-center">
+                        <img src="./images/business.png" alt="" class="size-11">
+                        <h1 class="font-extrabold text-3xl font-Garamond">EquiLaw</h1>
+                    </div>
+                    <div class="flex justify-between items-center my-6">
                         <button id="user-login-panel" class="btn btn-primary w-2/5 font-black">User Login</button>
-                        <button id="admin-login-panel" class="btn btn-outline btn-primary w-2/5 font-black">Admin
+                        <button id="admin-login-panel" class="btn btn-primary w-2/5 font-black">Admin
                             Login</button>
                     </div>
-                    <div class="" id="user-login">
+                    <div class="hidden" id="user-login">
                         <div class="form-control">
                             <input id="user-Login-name" type="text" placeholder="User Name" class="input input-bordered"
                                 required />
@@ -176,7 +180,7 @@
                         </ul>
                     </div>
                     <div class="navbar-end gap-5">
-                        <button onclick="showSectionByIdTwo('index')"><a id=""
+                        <button><a id="user-logout"
                                 class="btn btn-ghost bg-color1 hover:bg-orange-900 text-white font-semibold"
                                 href="./index.html">LogOut</a></button>
                     </div>
@@ -791,7 +795,7 @@
                         </ul>
                     </div>
                     <div class="navbar-end gap-5">
-                        <button onclick="showSectionByIdTwo('index')"><a id=""
+                        <button><a id="admin-logout"
                                 class="btn btn-ghost bg-color1 hover:bg-orange-900 text-white font-semibold"
                                 href="./index.html">LogOut</a></button>
                     </div>

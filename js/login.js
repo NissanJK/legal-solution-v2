@@ -39,3 +39,13 @@ document.getElementById('admin-login-panel')
         showSectionById('admin-login');
         changeColorById('admin-login-panel');
     });
+document.getElementById('user-logout')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionById('index');
+    })
+document.getElementById('admin-logout')
+    .addEventListener('click', function () {
+        event.preventDefault();
+        showSectionById('index');
+    })
