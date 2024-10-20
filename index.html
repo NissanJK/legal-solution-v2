@@ -105,35 +105,15 @@
                                 <li><a id="home2">Home</a></li>
                                 <li>
                                     <a id="services2">Services</a>
-                                    <!-- <ul class="p-2">
-                                        <li><a href="#">Consulting</a></li>
-                                        <li><a href="#">Litigation</a></li>
-                                        <li><a href="#">Legal Advice</a></li>
-                                    </ul> -->
                                 </li>
                                 <li>
                                     <a id="cases2">Cases</a>
-                                    <!-- <ul class="p-2">
-                                        <li><a href="#">Criminal Cases</a></li>
-                                        <li><a href="#">Civil Cases</a></li>
-                                        <li><a href="#">Corporate Cases</a></li>
-                                    </ul> -->
                                 </li>
                                 <li>
                                     <a id="blog2">Blog</a>
-                                    <!-- <ul class="p-2">
-                                        <li><a href="#">Latest Posts</a></li>
-                                        <li><a href="#">Popular Posts</a></li>
-                                        <li><a href="#">Categories</a></li>
-                                    </ul> -->
                                 </li>
                                 <li>
                                     <a id="inbox2">Inbox</a>
-                                    <!-- <ul class="p-2">
-                                        <li><a href="#">Email Us</a></li>
-                                        <li><a href="#">Office Location</a></li>
-                                        <li><a href="#">Phone Support</a></li>
-                                    </ul> -->
                                 </li>
                             </ul>
                         </div>
@@ -147,35 +127,15 @@
                             <li><a class="btn btn-ghost underline underline-offset-8" id="home">Home</a></li>
                             <li>
                                 <a class="btn btn-ghost underline-offset-8" id="services">Services</a>
-                                <!-- <ul class="p-2">
-                                        <li><a href="#">Consulting</a></li>
-                                        <li><a href="#">Litigation</a></li>
-                                        <li><a href="#">Legal Advice</a></li>
-                                    </ul> -->
                             </li>
                             <li>
                                 <a class="btn btn-ghost underline-offset-8" id="cases">Cases</a>
-                                <!-- <ul class="p-2">
-                                        <li><a href="#">Criminal Cases</a></li>
-                                        <li><a href="#">Civil Cases</a></li>
-                                        <li><a href="#">Corporate Cases</a></li>
-                                    </ul> -->
                             </li>
                             <li>
                                 <a class="btn btn-ghost underline-offset-8" id="blog">Blog</a>
-                                <!-- <ul class="p-2">
-                                        <li><a href="#">Latest Posts</a></li>
-                                        <li><a href="#">Popular Posts</a></li>
-                                        <li><a href="#">Categories</a></li>
-                                    </ul> -->
                             </li>
                             <li>
                                 <a class="btn btn-ghost underline-offset-8" id="inbox">Inbox</a>
-                                <!-- <ul class="p-2">
-                                        <li><a href="#">Email Us</a></li>
-                                        <li><a href="#">Office Location</a></li>
-                                        <li><a href="#">Phone Support</a></li>
-                                    </ul> -->
                             </li>
                         </ul>
                     </div>
@@ -801,15 +761,175 @@
                             challenge or just need advice, we’re here to help.</p>
                     </div>
                     <!-- form -->
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <div class="flex flex-col md:flex-row gap-8 p-6">
+                        <div class="grid grid-cols-2 w-full md:w-1/2 bg-neutral text-neutral-content">
+                            <div
+                                class="card bg-base-100 border-b border-r rounded-none bg-neutral text-neutral-content">
+                                <figure class="">
+                                    <img src="./images/address.png" class="mt-5" />
+                                </figure>
+                                <div class="card-body items-center text-center p-4">
+                                    <h2 class="card-title text-sm md:text-base lg:text-lg font-extrabold font-Garamond">
+                                        Address</h2>
+                                    <p class=" text-gray-500 text-xs md:text-sm lg:text-base">
+                                        XYZ,Chattogram,<br>Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 border-b rounded-none bg-neutral text-neutral-content">
+                                <figure class="">
+                                    <img src="./images/call.png" class="mt-5" />
+                                </figure>
+                                <div class="card-body items-center text-center p-4">
+                                    <h2 class="card-title text-sm md:text-base lg:text-lg font-extrabold font-Garamond">
+                                        Call Us</h2>
+                                    <p class=" text-gray-500 text-xs md:text-sm lg:text-base">+880 1712-072416</p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 border-r rounded-none bg-neutral text-neutral-content">
+                                <figure class="">
+                                    <img src="./images/email.png" class="mt-5" />
+                                </figure>
+                                <div class="card-body items-center text-center p-4">
+                                    <h2 class="card-title text-sm md:text-base lg:text-lg font-extrabold font-Garamond">
+                                        Email Us</h2>
+                                    <p class=" text-gray-500 text-xs md:text-sm lg:text-base">equilaw@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 rounded-none bg-neutral text-neutral-content">
+                                <figure class="">
+                                    <img src="./images/time.png" class="mt-5" />
+                                </figure>
+                                <div class="card-body items-center text-center p-4">
+                                    <h2 class="card-title text-sm md:text-base lg:text-lg font-extrabold font-Garamond">
+                                        Working Hours</h2>
+                                    <p class=" text-gray-500 text-xs md:text-sm lg:text-base">Mon-Fri: 9AM to
+                                        5PM<br>Sunday: 9AM to 1PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <input type="text" placeholder="Name"
+                                class="input input-bordered w-full bg-neutral text-neutral-content" />
+                            <input type="email" placeholder="Email"
+                                class="input input-bordered w-full my-6 bg-neutral text-neutral-content" />
+                            <input type="text" placeholder="Subject"
+                                class="input input-bordered w-full bg-neutral text-neutral-content" />
+                            <textarea class="textarea textarea-bordered w-full bg-neutral text-neutral-content my-6"
+                                placeholder="Your Message"></textarea>
+                            <button class="w-full"><a id=""
+                                    class="btn bg-color1 hover:bg-orange-900 text-white font-semibold w-full"
+                                    href="">Send Message</a></button>
+                        </div>
                     </div>
                 </section>
             </main>
             <div>
                 <!-- services -->
-                <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="services-container"></section>
+                <section class="px-10 md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="services-container">
+                    <h1 class="my-10 text-2xl md:text-3xl lg:text-4xl font-extrabold font-Garamond underline underline-offset-4 text-center">Services</h1>
+
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        At <strong>Equilaw</strong>, we are committed to providing high-quality legal services across
+                        various practice areas. Our team of expert lawyers offers clear, actionable advice and
+                        representation tailored to your unique needs.
+                    </p>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        Whether you're seeking assistance in family law, business law, or any other legal matter, we are
+                        here to guide you through every step.
+                    </p>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Comprehensive Legal
+                        Consultation</h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        We offer personalized legal consultations to help you understand your rights and the best course
+                        of action in any legal scenario.
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. One-on-one legal advice</li>
+                        <li>2. Case reviews and analysis</li>
+                        <li>3. Legal document preparation and review</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Business Law Expertise
+                    </h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        Our team is experienced in helping businesses navigate legal complexities. Whether you are
+                        starting a new business or managing an existing one, we can assist with:
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Business formation (LLCs, corporations, partnerships)</li>
+                        <li>2. Contract drafting, review, and negotiation</li>
+                        <li>3. Employment law and disputes</li>
+                        <li>4. Compliance with industry regulations</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Family Law and
+                        Mediation</h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        Family matters can be sensitive and complex. Our legal experts provide empathetic and effective
+                        solutions to resolve disputes, including:
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Divorce proceedings</li>
+                        <li>2. Child custody arrangements</li>
+                        <li>3. Property division</li>
+                        <li>4. Mediation services for a less contentious resolution</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Criminal Law Defense
+                    </h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        Our criminal defense attorneys have a proven track record of defending clients against criminal
+                        charges. We handle:
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Criminal case representation</li>
+                        <li>2. Drug offenses</li>
+                        <li>3. White-collar crime</li>
+                        <li>4. Bail, bonds, and post-conviction relief</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Real Estate and
+                        Property Law</h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        We assist clients with legal matters related to real estate transactions, property disputes, and
+                        more. Our services include:
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Contract review and negotiation</li>
+                        <li>2. Landlord-tenant disputes</li>
+                        <li>3. Zoning issues and land use</li>
+                        <li>4. Property litigation</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Estate Planning and
+                        Probate</h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        Ensure your estate is handled according to your wishes with our expert estate planning services.
+                        We provide:
+                    </p>
+                    <ul class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Drafting of wills, trusts, and living wills</li>
+                        <li>2. Power of attorney</li>
+                        <li>3. Probate administration</li>
+                    </ul>
+
+                    <h2 class="mb-5 text-xl md:text-2xl lg:text-3xl font-extrabold font-Garamond">Civil Litigation</h2>
+                    <p class="mb-5 text-gray-500 text-xs md:text-sm lg:text-base">
+                        We represent individuals and businesses in civil disputes, helping resolve conflicts
+                        efficiently. Services include:
+                    </p>
+                    <ul class="mb-10 text-gray-500 text-xs md:text-sm lg:text-base">
+                        <li>1. Contract disputes</li>
+                        <li>2. Personal injury claims</li>
+                        <li>3. Defamation cases</li>
+                        <li>4. Property disputes</li>
+                    </ul>
+                    <p class=" text-gray-500 text-xs md:text-sm lg:text-base">
+                        At Equilaw, we pride ourselves on delivering expert legal advice and representation across a wide array of practice areas. Whether you're facing a personal legal issue or need guidance for your business, our team is here to support you with personalized solutions and a commitment to excellence. Contact us today to find out how we can assist you with your legal needs and provide peace of mind.
+                    </p>
+                    
+                </section>
                 <!-- cases -->
                 <section class="md:px-16 lg:px-24 my-7 md:my-10 lg:my-14 hidden" id="cases-container"></section>
                 <!-- blog -->
