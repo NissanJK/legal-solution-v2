@@ -42,12 +42,12 @@ document.getElementById('admin-login-panel')
 document.getElementById('user-logout')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionById('index');
+        showSectionByIdTwo('index');
     })
 document.getElementById('admin-logout')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionById('index');
+        showSectionByIdTwo('index');
     })
 
 document.getElementById('home')
