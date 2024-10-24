@@ -11,6 +11,8 @@ document.getElementById('user-Login-btn')
         else {
             alert('Wrong Name or Password.')
         }
+        document.getElementById('user-Login-name').value = '';
+        document.getElementById('user-Login-pass').value = '';
     });
 document.getElementById('admin-Login-btn')
     .addEventListener('click', function (event) {
@@ -25,6 +27,9 @@ document.getElementById('admin-Login-btn')
         else {
             alert('Wrong Name or Password.')
         }
+        document.getElementById('admin-Login-name').value = '';
+        document.getElementById('admin-Login-pass').value = '';
+
     });
 
 document.getElementById('user-login-panel')
@@ -106,7 +111,7 @@ document.getElementById('inbox2')
         showSectionByIdThree('inbox-container');
     });
 
-    document.getElementById('faqs-3')
+document.getElementById('faqs-3')
     .addEventListener('click', function () {
         event.preventDefault();
         showSectionByIdFour('faqs-container-1');
@@ -131,7 +136,7 @@ document.getElementById('inbox-3')
         changeColorByIdThree('inbox-3');
     });
 
-    document.getElementById('faqs-4')
+document.getElementById('faqs-4')
     .addEventListener('click', function () {
         event.preventDefault();
         showSectionByIdThree('faqs-container-1');
@@ -150,4 +155,64 @@ document.getElementById('inbox-4')
     .addEventListener('click', function () {
         event.preventDefault();
         showSectionByIdThree('inbox-container-1');
+    });
+
+document.getElementById('send-message')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const clientName = document.getElementById('client-name').value;
+        const clientEmail = document.getElementById('client-email').value;
+        const requestType = document.getElementById('request-type').value;
+        const clientRequest = document.getElementById('client-request').value;
+
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <div class="card bg-neutral text-neutral-content w-11/12 mx-auto">
+  <div class="p-3 font-semibold">
+    <p class="mb-5">Name: ${clientName}</p>
+    <p>Email: ${clientEmail}</p>
+    <p class="my-5">Type of request: ${requestType}</p>
+    <p class="mb-5">Request details: ${clientRequest}</p>
+    <div class="flex justify-around items-center">
+      <button class="btn btn-primary" id="${clientName}">Accept</button>
+      <button class="btn btn-primary" id="${clientName}-1">Deny</button>
+    </div>
+  </div>
+</div>
+        `
+        document.getElementById('inbox-container-2').appendChild(div);
+        document.getElementById('client-name').value = '';
+        document.getElementById('client-email').value = '';
+        document.getElementById('request-type').value = '';
+        document.getElementById('client-request').value = '';
+    });
+
+document.getElementById('post-blog')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const blogPost = document.getElementById('blog-post').value;
+        const blogTitle = document.getElementById('blog-title').value;
+        const div2 = document.createElement('div');
+        div2.innerHTML = `
+<div class="card bg-neutral text-neutral-content mb-8">
+  <div class="p-3 font-semibold">
+    <p class="mb-3 font-bold">${blogTitle}</p>
+    <p class="">${blogPost}</p>
+  </div>
+</div>
+`
+        const div3 = document.createElement('div');
+        div3.innerHTML = `
+<div class="card bg-neutral text-neutral-content mb-8">
+  <div class="p-3 font-semibold">
+    <p class="mb-3 font-bold">${blogTitle}</p>
+    <p class="">${blogPost}</p>
+  </div>
+</div>
+`
+        document.getElementById('blog-container-9').appendChild(div3);
+        document.getElementById('blog-container-4').appendChild(div2);
+        document.getElementById('blog-post').value = '';
     });
