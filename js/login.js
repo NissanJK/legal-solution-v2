@@ -139,22 +139,22 @@ document.getElementById('inbox-3')
 document.getElementById('faqs-4')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionByIdThree('faqs-container-1');
+        showSectionByIdFour('faqs-container-1');
     });
 document.getElementById('cases-4')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionByIdThree('cases-container-1');
+        showSectionByIdFour('cases-container-1');
     });
 document.getElementById('blog-4')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionByIdThree('blog-container-1');
+        showSectionByIdFour('blog-container-1');
     });
 document.getElementById('inbox-4')
     .addEventListener('click', function () {
         event.preventDefault();
-        showSectionByIdThree('inbox-container-1');
+        showSectionByIdFour('inbox-container-1');
     });
 
 document.getElementById('send-message')
@@ -215,4 +215,5 @@ document.getElementById('post-blog')
         document.getElementById('blog-container-9').appendChild(div3);
         document.getElementById('blog-container-4').appendChild(div2);
         document.getElementById('blog-post').value = '';
+        document.getElementById('blog-title').value = '';
     });
