@@ -50,22 +50,45 @@
                         <h1 class="font-extrabold text-3xl font-Garamond">EquiLaw</h1>
                     </div>
                     <div class="flex justify-between items-center my-6">
-                        <button id="user-login-panel" class="btn btn-primary w-2/5 font-black">User Login</button>
+                        <button id="user-login-panel" class="btn btn-primary w-2/5 font-black">User Access</button>
                         <button id="admin-login-panel" class="btn btn-primary w-2/5 font-black">Admin
-                            Login</button>
+                            Access</button>
                     </div>
                     <div class="hidden" id="user-login">
-                        <div class="form-control">
-                            <input id="user-Login-name" type="text" placeholder="User Name" class="input input-bordered"
-                                required />
+                        <div id="register-form" class="">
+                            <div class="form-control">
+                                <input id="register-username" type="text" placeholder="User Name"
+                                    class="input input-bordered" required />
+                            </div>
+                            <br>
+                            <div class="form-control">
+                                <input id="register-password" type="password" placeholder="Password"
+                                    class="input input-bordered" autocomplete="off" required />
+                            </div>
+                            <br>
+                            <div class="form-control">
+                                <input id="register-confirm-password" type="password" placeholder="Confirm Password"
+                                    class="input input-bordered" autocomplete="off" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="user-register-btn" class="btn btn-primary font-black">Register</button>
+                            </div>
+                            <p class="mt-2">Already have an account? <a href="#" id="toggle-to-login">Login</a></p>
                         </div>
-                        <br>
-                        <div class="form-control">
-                            <input id="user-Login-pass" type="password" placeholder="Password"
-                                class="input input-bordered" autocomplete="off" required />
-                        </div>
-                        <div class="form-control mt-6">
-                            <button id="user-Login-btn" class="btn btn-primary font-black">Login</button>
+                        <div id="login-form" class="hidden">
+                            <div class="form-control">
+                                <input id="user-Login-name" type="text" placeholder="User Name"
+                                    class="input input-bordered" required />
+                            </div>
+                            <br>
+                            <div class="form-control">
+                                <input id="user-Login-pass" type="password" placeholder="Password"
+                                    class="input input-bordered" autocomplete="off" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="user-Login-btn" class="btn btn-primary font-black">Login</button>
+                            </div>
+                            <p class="mt-2">Don't have an account? <a href="#" id="toggle-to-reg">Register</a></p>
                         </div>
                     </div>
                     <div class="hidden" id="admin-login">
@@ -944,20 +967,64 @@
                     <div class="w-11/12 mx-auto" id="">
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
-                                <p class="mb-3 font-bold">Navigating Legal Challenges: When to Seek Professional Advice</p>
-                                <p class="">Legal challenges can arise at any time, impacting both individuals and businesses in various ways. While minor legal issues can sometimes be resolved without professional assistance, certain situations require the expertise of a lawyer to avoid larger problems down the road. Whether it's a contract dispute, property disagreement, or complex business transaction, a legal professional ensures that all aspects are covered and that your interests are fully protected. Seeking legal advice early on can also prevent small issues from escalating into costly litigation. For instance, dealing with employment law complications or navigating tax and regulatory matters are scenarios where professional help is invaluable. Additionally, when you're faced with lawsuits or accusations, having a lawyer on your side can make a significant difference in achieving a favorable outcome. Knowing when to consult a lawyer—whether it’s for drafting agreements, handling civil or criminal cases, or managing business compliance—can save time, money, and potential legal headaches.</p>
+                                <p class="mb-3 font-bold">Navigating Legal Challenges: When to Seek Professional Advice
+                                </p>
+                                <p class="">Legal challenges can arise at any time, impacting both individuals and
+                                    businesses in various ways. While minor legal issues can sometimes be resolved
+                                    without professional assistance, certain situations require the expertise of a
+                                    lawyer to avoid larger problems down the road. Whether it's a contract dispute,
+                                    property disagreement, or complex business transaction, a legal professional ensures
+                                    that all aspects are covered and that your interests are fully protected. Seeking
+                                    legal advice early on can also prevent small issues from escalating into costly
+                                    litigation. For instance, dealing with employment law complications or navigating
+                                    tax and regulatory matters are scenarios where professional help is invaluable.
+                                    Additionally, when you're faced with lawsuits or accusations, having a lawyer on
+                                    your side can make a significant difference in achieving a favorable outcome.
+                                    Knowing when to consult a lawyer—whether it’s for drafting agreements, handling
+                                    civil or criminal cases, or managing business compliance—can save time, money, and
+                                    potential legal headaches.</p>
                             </div>
                         </div>
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
-                                <p class="mb-3 font-bold">The Importance of Legal Compliance for Startups and Small Businesses</p>
-                                <p class="">For startups and small businesses, staying legally compliant is not just a formality but a necessity for long-term success. While the process of understanding all the regulations and laws may seem overwhelming at first, neglecting these legal obligations can lead to penalties, fines, or even the shutdown of a business. Ensuring legal compliance covers a wide array of areas, including business registration, contract management, tax filing, and employment law. For instance, registering your business correctly with local and national authorities is one of the first steps to ensure your operations are legitimate. Creating clear, legally binding contracts for employees, partners, and clients protects your business from potential disputes. Additionally, staying up to date with tax obligations is critical in avoiding penalties, while compliance with labor laws ensures your employees' rights and safety are maintained. Consulting a legal professional early in your business journey can help review and meet all necessary compliance requirements. Not only does this avoid legal risks, but it also builds trust with clients, investors, and employees, laying the groundwork for future growth.</p>
+                                <p class="mb-3 font-bold">The Importance of Legal Compliance for Startups and Small
+                                    Businesses</p>
+                                <p class="">For startups and small businesses, staying legally compliant is not just a
+                                    formality but a necessity for long-term success. While the process of understanding
+                                    all the regulations and laws may seem overwhelming at first, neglecting these legal
+                                    obligations can lead to penalties, fines, or even the shutdown of a business.
+                                    Ensuring legal compliance covers a wide array of areas, including business
+                                    registration, contract management, tax filing, and employment law. For instance,
+                                    registering your business correctly with local and national authorities is one of
+                                    the first steps to ensure your operations are legitimate. Creating clear, legally
+                                    binding contracts for employees, partners, and clients protects your business from
+                                    potential disputes. Additionally, staying up to date with tax obligations is
+                                    critical in avoiding penalties, while compliance with labor laws ensures your
+                                    employees' rights and safety are maintained. Consulting a legal professional early
+                                    in your business journey can help review and meet all necessary compliance
+                                    requirements. Not only does this avoid legal risks, but it also builds trust with
+                                    clients, investors, and employees, laying the groundwork for future growth.</p>
                             </div>
                         </div>
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
                                 <p class="mb-3 font-bold">How to Choose the Right Lawyer for Your Case</p>
-                                <p class="">Selecting the right lawyer is a crucial decision, especially when facing important legal matters. Whether dealing with personal issues or business-related cases, having the right legal representation can greatly influence the outcome. One of the most important factors when choosing a lawyer is their expertise. It’s essential to select a professional who specializes in the area of law relevant to your case—be it family law, corporate law, or criminal defense. Beyond expertise, a lawyer's reputation speaks volumes about their ability to handle cases successfully. Client reviews, past case outcomes, and peer recommendations are useful indicators when researching a lawyer’s background. Another key aspect is communication. A lawyer should be able to explain complex legal processes clearly and ensure you are always informed about your case’s progress. It’s important to feel comfortable asking questions and confident that your lawyer understands your concerns. Lastly, consider the fee structure. Lawyers may charge on an hourly basis, a flat rate, or even offer contingency-based fees depending on the case type. Understanding these aspects upfront allows you to choose a lawyer who not only fits your legal needs but also aligns with your financial expectations.</p>
+                                <p class="">Selecting the right lawyer is a crucial decision, especially when facing
+                                    important legal matters. Whether dealing with personal issues or business-related
+                                    cases, having the right legal representation can greatly influence the outcome. One
+                                    of the most important factors when choosing a lawyer is their expertise. It’s
+                                    essential to select a professional who specializes in the area of law relevant to
+                                    your case—be it family law, corporate law, or criminal defense. Beyond expertise, a
+                                    lawyer's reputation speaks volumes about their ability to handle cases successfully.
+                                    Client reviews, past case outcomes, and peer recommendations are useful indicators
+                                    when researching a lawyer’s background. Another key aspect is communication. A
+                                    lawyer should be able to explain complex legal processes clearly and ensure you are
+                                    always informed about your case’s progress. It’s important to feel comfortable
+                                    asking questions and confident that your lawyer understands your concerns. Lastly,
+                                    consider the fee structure. Lawyers may charge on an hourly basis, a flat rate, or
+                                    even offer contingency-based fees depending on the case type. Understanding these
+                                    aspects upfront allows you to choose a lawyer who not only fits your legal needs but
+                                    also aligns with your financial expectations.</p>
                             </div>
                         </div>
                     </div>
@@ -1077,26 +1144,71 @@
                     <div class="w-11/12 mx-auto" id="">
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
-                                <p class="mb-3 font-bold">Navigating Legal Challenges: When to Seek Professional Advice</p>
-                                <p class="">Legal challenges can arise at any time, impacting both individuals and businesses in various ways. While minor legal issues can sometimes be resolved without professional assistance, certain situations require the expertise of a lawyer to avoid larger problems down the road. Whether it's a contract dispute, property disagreement, or complex business transaction, a legal professional ensures that all aspects are covered and that your interests are fully protected. Seeking legal advice early on can also prevent small issues from escalating into costly litigation. For instance, dealing with employment law complications or navigating tax and regulatory matters are scenarios where professional help is invaluable. Additionally, when you're faced with lawsuits or accusations, having a lawyer on your side can make a significant difference in achieving a favorable outcome. Knowing when to consult a lawyer—whether it’s for drafting agreements, handling civil or criminal cases, or managing business compliance—can save time, money, and potential legal headaches.</p>
+                                <p class="mb-3 font-bold">Navigating Legal Challenges: When to Seek Professional Advice
+                                </p>
+                                <p class="">Legal challenges can arise at any time, impacting both individuals and
+                                    businesses in various ways. While minor legal issues can sometimes be resolved
+                                    without professional assistance, certain situations require the expertise of a
+                                    lawyer to avoid larger problems down the road. Whether it's a contract dispute,
+                                    property disagreement, or complex business transaction, a legal professional ensures
+                                    that all aspects are covered and that your interests are fully protected. Seeking
+                                    legal advice early on can also prevent small issues from escalating into costly
+                                    litigation. For instance, dealing with employment law complications or navigating
+                                    tax and regulatory matters are scenarios where professional help is invaluable.
+                                    Additionally, when you're faced with lawsuits or accusations, having a lawyer on
+                                    your side can make a significant difference in achieving a favorable outcome.
+                                    Knowing when to consult a lawyer—whether it’s for drafting agreements, handling
+                                    civil or criminal cases, or managing business compliance—can save time, money, and
+                                    potential legal headaches.</p>
                             </div>
                         </div>
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
-                                <p class="mb-3 font-bold">The Importance of Legal Compliance for Startups and Small Businesses</p>
-                                <p class="">For startups and small businesses, staying legally compliant is not just a formality but a necessity for long-term success. While the process of understanding all the regulations and laws may seem overwhelming at first, neglecting these legal obligations can lead to penalties, fines, or even the shutdown of a business. Ensuring legal compliance covers a wide array of areas, including business registration, contract management, tax filing, and employment law. For instance, registering your business correctly with local and national authorities is one of the first steps to ensure your operations are legitimate. Creating clear, legally binding contracts for employees, partners, and clients protects your business from potential disputes. Additionally, staying up to date with tax obligations is critical in avoiding penalties, while compliance with labor laws ensures your employees' rights and safety are maintained. Consulting a legal professional early in your business journey can help review and meet all necessary compliance requirements. Not only does this avoid legal risks, but it also builds trust with clients, investors, and employees, laying the groundwork for future growth.</p>
+                                <p class="mb-3 font-bold">The Importance of Legal Compliance for Startups and Small
+                                    Businesses</p>
+                                <p class="">For startups and small businesses, staying legally compliant is not just a
+                                    formality but a necessity for long-term success. While the process of understanding
+                                    all the regulations and laws may seem overwhelming at first, neglecting these legal
+                                    obligations can lead to penalties, fines, or even the shutdown of a business.
+                                    Ensuring legal compliance covers a wide array of areas, including business
+                                    registration, contract management, tax filing, and employment law. For instance,
+                                    registering your business correctly with local and national authorities is one of
+                                    the first steps to ensure your operations are legitimate. Creating clear, legally
+                                    binding contracts for employees, partners, and clients protects your business from
+                                    potential disputes. Additionally, staying up to date with tax obligations is
+                                    critical in avoiding penalties, while compliance with labor laws ensures your
+                                    employees' rights and safety are maintained. Consulting a legal professional early
+                                    in your business journey can help review and meet all necessary compliance
+                                    requirements. Not only does this avoid legal risks, but it also builds trust with
+                                    clients, investors, and employees, laying the groundwork for future growth.</p>
                             </div>
                         </div>
                         <div class="card bg-neutral text-neutral-content mb-8">
                             <div class="p-3 font-semibold">
                                 <p class="mb-3 font-bold">How to Choose the Right Lawyer for Your Case</p>
-                                <p class="">Selecting the right lawyer is a crucial decision, especially when facing important legal matters. Whether dealing with personal issues or business-related cases, having the right legal representation can greatly influence the outcome. One of the most important factors when choosing a lawyer is their expertise. It’s essential to select a professional who specializes in the area of law relevant to your case—be it family law, corporate law, or criminal defense. Beyond expertise, a lawyer's reputation speaks volumes about their ability to handle cases successfully. Client reviews, past case outcomes, and peer recommendations are useful indicators when researching a lawyer’s background. Another key aspect is communication. A lawyer should be able to explain complex legal processes clearly and ensure you are always informed about your case’s progress. It’s important to feel comfortable asking questions and confident that your lawyer understands your concerns. Lastly, consider the fee structure. Lawyers may charge on an hourly basis, a flat rate, or even offer contingency-based fees depending on the case type. Understanding these aspects upfront allows you to choose a lawyer who not only fits your legal needs but also aligns with your financial expectations.</p>
+                                <p class="">Selecting the right lawyer is a crucial decision, especially when facing
+                                    important legal matters. Whether dealing with personal issues or business-related
+                                    cases, having the right legal representation can greatly influence the outcome. One
+                                    of the most important factors when choosing a lawyer is their expertise. It’s
+                                    essential to select a professional who specializes in the area of law relevant to
+                                    your case—be it family law, corporate law, or criminal defense. Beyond expertise, a
+                                    lawyer's reputation speaks volumes about their ability to handle cases successfully.
+                                    Client reviews, past case outcomes, and peer recommendations are useful indicators
+                                    when researching a lawyer’s background. Another key aspect is communication. A
+                                    lawyer should be able to explain complex legal processes clearly and ensure you are
+                                    always informed about your case’s progress. It’s important to feel comfortable
+                                    asking questions and confident that your lawyer understands your concerns. Lastly,
+                                    consider the fee structure. Lawyers may charge on an hourly basis, a flat rate, or
+                                    even offer contingency-based fees depending on the case type. Understanding these
+                                    aspects upfront allows you to choose a lawyer who not only fits your legal needs but
+                                    also aligns with your financial expectations.</p>
                             </div>
                         </div>
                     </div>
                     <div class="w-11/12 mx-auto" id="blog-container-9"></div>
                     <div class="w-11/12 mx-auto">
-                        <input type="text" id="blog-title" placeholder="Enter blog title" class="mb-5 input input-bordered w-full" />
+                        <input type="text" id="blog-title" placeholder="Enter blog title"
+                            class="mb-5 input input-bordered w-full" />
                         <textarea id="blog-post" class="textarea textarea-bordered mb-5 w-full"
                             placeholder="Enter your blog"></textarea>
                         <button class="w-full"><a id="post-blog"

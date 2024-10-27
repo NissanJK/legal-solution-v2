@@ -47,3 +47,7 @@ function changeColorByIdThree(id) {
     document.getElementById('inbox-3').classList.remove('underline');
     document.getElementById(id).classList.add('underline');
 }
+function toggleForms() {
+    document.getElementById('login-form').classList.toggle('hidden');
+    document.getElementById('register-form').classList.toggle('hidden');
+}

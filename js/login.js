@@ -4,8 +4,9 @@ document.getElementById('user-Login-btn')
 
         const loginName = document.getElementById('user-Login-name').value;
         const loginPass = document.getElementById('user-Login-pass').value;
+        const storedUser = JSON.parse(localStorage.getItem(loginName));
 
-        if ((loginName === 'user1' && loginPass === '1111')/*||(loginName === 'user2' && loginPass === '2222')||(loginName === 'user3' && loginPass === '3333')||(loginName === 'user4' && loginPass === '4444')*/) {
+        if (storedUser && storedUser.password === loginPass) {
             showSectionByIdTwo('home-page');
         }
         else {
@@ -216,4 +217,38 @@ document.getElementById('post-blog')
         document.getElementById('blog-container-4').appendChild(div2);
         document.getElementById('blog-post').value = '';
         document.getElementById('blog-title').value = '';
+    });
+
+document.getElementById('toggle-to-login')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+
+        toggleForms('login-form')
+    });
+document.getElementById('toggle-to-reg')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+
+        toggleForms('register-form')
+    });
+
+document.getElementById('user-register-btn')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById('register-username').value;
+        const password = document.getElementById('register-password').value;
+        const confirmPassword = document.getElementById('register-confirm-password').value;
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+        }
+        const user = { username, password };
+        localStorage.setItem(username, JSON.stringify(user));
+        alert("Registration successful!");
+        document.getElementById('register-username').value = '';
+        document.getElementById('register-password').value = '';
+        document.getElementById('register-confirm-password').value = '';
+        toggleForms('login-form');
     });
